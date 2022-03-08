@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style-contacto.css">
+    <title>Contacto</title>
+</head>
+<body class="grid">
+    <header class="cab">
+        <nav>
+            <ol>
+                <a href="../index.html">Inicio</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./fotos.html">Fotos</a>
+                <a href="./contacto.html">Contacto</a>
+            </ol>
+        </nav>
+    </header>
+
+    <main class="formulario">
+        <h1 class="presu">Pedinos tu presupuesto!</h1>
+        <form action="#">
+            <fieldset>
+                <legend class="form">Formulario de contacto</legend>
+                <div class="name">
+                    <label for="Nombre">Nombre</label>
+                    <br><br>
+                    <input type="text" name="name" placeholder="Juan">
+                </div>
+                <br>
+                <div class="mail">
+                    <label for="email">E-mail</label>
+                    <br><br>
+                    <input type="email" name="email" placeholder="juan@juan.com.ar" required> 
+                </div>
+                <br>
+                <div class="pcia">
+                    <label for="pais">Provincia</label>
+                    <br><br>
+                    <select name="pais" id="">
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Capital Federal">Capital Federal</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
+                <br>
+                <div class="text">
+                    <label for="comentario">Mensaje</label>
+                    <br><br>
+                    <textarea name="comentario" id="" cols="100" rows="10"></textarea>
+                    <br>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <section class="rrss">
+            <p>También podes seguirnos en nuestras redes sociales!</p>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="../iconos-rrss/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../iconos-rrss/facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com/home" target="_blank"><img src="../iconos-rrss/twitter.png" alt="twitter"></a>
+        </section>
+    </footer>
+
+</body>
+</html>

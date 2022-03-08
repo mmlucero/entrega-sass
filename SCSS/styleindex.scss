@@ -1,0 +1,236 @@
+//vars
+$aColor:rgb(255, 111 , 136);
+$bgImg: url(../imagenes/img-index.jpg);
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: $bgImg;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+
+.box3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 70%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.box2{
+    background-color: pink;
+    padding: 90px;
+    opacity: .4;
+}
+
+a{
+    color: $aColor;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    font-size: 15px;
+    &:hover{
+        transform: scale(1.2);
+        text-decoration: underline $aColor;
+    }
+}
+
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+    padding: 0%;
+}
+
+
+@media screen and (min-width:500px)
+{
+    body{
+        background-image: $bgImg;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .box3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 70%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .box2{
+        background-color: pink;
+        padding: 100px;
+        opacity: .4;
+    }
+
+    a{
+        color: $aColor;
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8%;
+        font-size: 15px;
+        &:hover{
+            transform: scale(1.2);
+            text-decoration: underline $aColor;
+        }
+    }
+    
+}
+
+@media (min-width: 700px){
+
+    body{
+        background-image: $bgImg;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+
+    .box3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 70%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .box2{
+        background-color: pink;
+        padding: 100px;
+        opacity: .4;
+    }
+
+    a{
+        color: $aColor;
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8%;
+        font-size: 20px;
+
+        &:hover{
+            transform: scale(1.2);
+            text-decoration: underline $aColor;
+        }
+    }
+    
+}
+
+
+@media screen and (min-width:920px){
+
+    body{
+        height: 100%;
+        background-image: $bgImg;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2 50%);
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    
+    .box1{
+        background-color: white;
+        margin-top: 0;
+        padding: 200px;
+        opacity: .2;
+    }
+    
+    .box2{
+        margin-top: 0;
+        background-color: pink;
+        padding: 125px;
+        opacity: .4;
+    }
+
+    .box3{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    a{
+        color: $aColor;
+        text-decoration: none;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        margin-inline: 100px;
+
+        &:hover{
+            transform: scale(1.2);
+            text-decoration: underline $aColor;
+        }
+    }
+}

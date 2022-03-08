@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: rgb(255, 111, 136);
+    padding: 8px;
+    margin-top: 0px;
+    color: white;
+    position: sticky;
+    top: 0px;
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header nav ol a{
+    border: 0%;
+    padding: 20px;
+    margin-left: 11%;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    color: white;
+    position: sticky;
+}
+
+
+
+.img1 img{
+    grid-area: fila1;
+    width: 300px;
+    height: 205px;
+    filter: grayscale(100%);
+    background-color: white;
+    margin: initial;
+    margin-left: 1%;  
+}
+
+.img2 img{
+    grid-area: fila2;
+    width: 410px;
+    height: 310px;
+    filter: grayscale(100%);
+    background-color: white;
+    margin: 0%;
+    margin-left: 1%;
+}
+
+.img3 img{
+    grid-area: fila1;
+    width: 370px;
+    height: 205px;
+    filter: grayscale(100%);
+    background-color: white;
+    margin: 0%;
+    margin-left: 1%;   
+    grid-area: fila3;
+}
+
+.img4 img{
+    grid-area: fila2;
+    width: 410px;
+    height: 310px;
+    filter: grayscale(100%);
+    background-color: white;
+    margin: 0%;
+    margin-left: 1%;
+    grid-area: fila4;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img:hover{
+    opacity: 1;
+    filter: none;
+}
+
+
+.cabeza{
+    grid-area: header;
+}
+
+.pie{
+    grid-area: pie;
+}
+
+
+.grid{
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: repeat (4, 518px);
+    grid-template-areas: 
+    "header header header header"
+    "fila1 fila2 fila3 fila4";
+}

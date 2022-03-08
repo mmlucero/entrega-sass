@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: pink;
+    background-size: cover;
+    color: rgb(255, 111, 136);
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: pink;
+    padding: 20px;
+    margin-top: 0px;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover{
+    transform: scale(1.2);
+    text-decoration: underline rgb(255, 111, 136);
+}
+
+header nav ol a{
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    background-color: pink;
+}
+
+section ul li{
+    /*margin-left: 14%;*/
+    margin-top: 10px;
+    font-style: italic;
+}
+
+section img{
+    height: 300px;
+    border: 20px;
+    border-color: white;
+    border-style: solid;
+    margin-top: 20px;
+    /*margin-left: 12%;*/
+    align-content: center;
+}
+
+section p{
+    margin-top: 30px;
+    align-content: center;
+  /*  margin-left: 20px;*/
+    color: rgb(255, 88, 116);
+    
+}
+
+h1{
+  /*  margin-left: 46%;*/
+    margin-bottom: 5px;
+}
+
+footer{
+    grid-area: foot;
+    padding: 20px;
+}
+
+h1{
+    height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "cabeza"
+    "princ"
+    "text1"
+    "text2"
+    "text3";
+}
+
+
+.img__Grid{
+    margin-top: 50px ;
+ /*   margin-left: 21%;*/
+    
+}
+
+.img__Grid img{
+    margin: 0 20px;
+    margin-bottom: 160px;
+    margin-left: 20%;
+}
+
+.img1, .img2, .img3{
+    width: 300px;
+    transition: transform .2s;
+    display: block;
+}
+
+.img1:hover, .img2:hover, .img3:hover{
+    transform: scale(1.2);
+}
+
+.texto, .texto2, .texto3{
+ /*   margin-left: 30px;*/
+    margin-bottom: 80px;
+    margin-left: 5%;
+}
+
+.texto{
+    grid-area: text1;
+}
+
+.texto2{
+    grid-area: text2;
+}
+
+.texto3{
+    grid-area: text3;
+}
+
+.cabeza{
+    grid-area: cabeza;
+}
+
+.princ{
+    grid-area: princ;
+}
+
+.foot{
+    grid-area: foot;
+}
+
+
+@media (min-width:500px){
+    header{
+        background-color: pink;
+        padding: 20px;
+        margin-top: 0px;
+        color: white;
+        position: sticky;
+        top: 0px;
+    }
+    
+    a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    a:hover{
+        transform: scale(1.2);
+        text-decoration: underline rgb(255, 111, 136);
+    }
+    
+    header nav ol a{
+        border: 0;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 15px;
+        background-color: pink;
+    }
+    
+    section ul li{
+        /*margin-left: 14%;*/
+        margin-top: 10px;
+        font-style: italic;
+    }
+    
+    section img{
+        height: 300px;
+        border: 20px;
+        border-color: white;
+        border-style: solid;
+        margin-top: 20px;
+        /*margin-left: 12%;*/
+        align-content: center;
+    }
+    
+    section p{
+        margin-top: 30px;
+        align-content: center;
+      /*  margin-left: 20px;*/
+        color: rgb(255, 88, 116);
+        
+    }
+    
+    h1{
+      /*  margin-left: 46%;*/
+        margin-bottom: 5px;
+    }
+    
+    footer{
+        grid-area: foot;
+        padding: 20px;
+    }
+    
+    h1{
+        height: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas:
+        "cabeza cabeza"
+        "princ princ"
+        "text1 text1"
+        "text2 text2"
+        "text3 text3";
+    }
+    
+
+    
+    .img__Grid{
+        margin-top: 50px ;
+     /*   margin-left: 21%;*/
+        
+    }
+    
+    .img__Grid img{
+        margin: 0 20px;
+        margin-bottom: 160px;
+        margin-left: 30%;
+    }
+    
+    .img1, .img2, .img3{
+        width: 300px;
+        transition: transform .2s;
+        display: block;
+    }
+    
+    .img1:hover, .img2:hover, .img3:hover{
+        transform: scale(1.2);
+    }
+    
+    .texto, .texto2, .texto3{
+     /*   margin-left: 30px;*/
+        margin-bottom: 80px;
+        margin-left: 5%;
+    }
+    
+
+}
+
+
+@media (min-width:700px){
+
+    header{
+        background-color: pink;
+        padding: 20px;
+        margin-top: 0px;
+        color: white;
+        position: sticky;
+        top: 0px;
+    }
+    
+    a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    a:hover{
+        transform: scale(1.2);
+        text-decoration: underline rgb(255, 111, 136);
+    }
+    
+    header nav ol a{
+        border: 0;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 15px;
+        background-color: pink;
+    }
+    
+    section ul li{
+        /*margin-left: 14%;*/
+        margin-top: 10px;
+        font-style: italic;
+    }
+    
+    section img{
+        height: 300px;
+        border: 20px;
+        border-color: white;
+        border-style: solid;
+        margin-top: 20px;
+        /*margin-left: 12%;*/
+        align-content: center;
+    }
+    
+    section p{
+        margin-top: 30px;
+        align-content: center;
+      /*  margin-left: 20px;*/
+        color: rgb(255, 88, 116);
+        
+    }
+    
+    h1{
+      /*  margin-left: 46%;*/
+        margin-bottom: 5px;
+    }
+    
+    footer{
+        grid-area: foot;
+        padding: 20px;
+    }
+    
+    h1{
+        height: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas:
+        "cabeza cabeza"
+        "princ princ"
+        "text1 text1"
+        "text2 text2"
+        "text3 text3";
+    }
+    
+
+    
+    .img__Grid{
+        margin-top: 50px ;
+     /*   margin-left: 21%;*/
+        
+    }
+    
+    .img__Grid img{
+        margin: 0 20px;
+        margin-bottom: 160px;
+        margin-left: 30%;
+    }
+    
+    .img1, .img2, .img3{
+        width: 300px;
+        transition: transform .2s;
+        display: block;
+    }
+    
+    .img1:hover, .img2:hover, .img3:hover{
+        transform: scale(1.2);
+    }
+    
+    .texto, .texto2, .texto3{
+     /*   margin-left: 30px;*/
+        margin-bottom: 80px;
+        margin-left: 5%;
+    }
+    
+
+    
+
+}
+
+@media (min-width:920px){
+
+
+header{
+    background-color: pink;
+    padding: 20px;
+    margin-top: 0px;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover{
+    transform: scale(1.2);
+    text-decoration: underline rgb(255, 111, 136);
+}
+
+header nav ol a{
+    border: 0%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+
+    color: white;
+}
+
+section ul li{
+    margin-left: 14%;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+section img{
+    height: 300px;
+    border: 20px;
+    border-color: white;
+    border-style: solid;
+    margin-top: 20px;
+    margin-left: 12%;
+    align-content: center;
+}
+
+section p{
+    margin-top: 30px;
+    align-content: center;
+    margin-left: 20px;
+    color: rgb(255, 88, 116);
+    
+}
+
+h1{
+    margin-left: 46%;
+    margin-bottom: 5px;
+}
+
+footer{
+    grid-area: foot;
+    padding: 20px;
+}
+
+h1{
+    height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,512px);
+    grid-template-areas:
+    "cabeza cabeza cabeza"
+    "princ princ princ"
+    "text1 text1 text1"
+    "text2 text2 text2"
+    "text3 text3 text3";
+}
+
+.cabeza{
+    grid-area: cabeza;
+}
+
+.princ{
+    grid-area: princ;
+}
+
+.foot{
+    grid-area: foot;
+}
+
+
+.img__Grid{
+    margin-top: 50px ;
+    margin-left: 21%;
+    display: flex;
+    flex-direction: row;  
+}
+
+.img__Grid img{
+    margin: 0 20px;
+    margin-bottom: 160px;
+}
+
+.img1, .img2, .img3{
+    width: 270px;
+    transition: transform .2s;
+}
+
+.img1:hover, .img2:hover, .img3:hover{
+    transform: scale(1.2);
+}
+
+.texto, .texto2, .texto3{
+    margin-left: 30px;
+    margin-bottom: 80px;
+}
+
+.texto{
+    grid-area: text1;
+}
+
+.texto2{
+    grid-area: text2;
+}
+
+.texto3{
+    grid-area: text3;
+}
+
+}
